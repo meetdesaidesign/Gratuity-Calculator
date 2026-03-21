@@ -54,12 +54,12 @@ export const buildNotEligibleNudge = (years: number, months: number): string => 
 
   if (years < 4) {
     const remainingYears = 4 - years
-    return `Need ${remainingYears} more ${pluralize(remainingYears, 'year', 'years')} to be close.`
+    return `પાત્ર થવા માટે હજુ ${remainingYears} ${pluralize(remainingYears, 'વર્ષ', 'વર્ષ')} જોઈએ.`
   }
 
   if (years === 4 && months < 6) {
     const remainingMonths = 6 - months
-    return `Add ${remainingMonths} more ${pluralize(remainingMonths, 'month', 'months')} and you'll qualify.`
+    return `હજુ ${remainingMonths} ${pluralize(remainingMonths, 'મહિનો', 'મહિના')} ઉમેરો, તમે પાત્ર થશો.`
   }
 
   return ''

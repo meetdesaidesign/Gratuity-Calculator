@@ -74,7 +74,7 @@ export function ServiceInput({
           }}
         >
           <span>0</span>
-          <span>40 yrs</span>
+          <span>40 વર્ષ</span>
         </div>
       </div>
 

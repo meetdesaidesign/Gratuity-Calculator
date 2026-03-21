@@ -8,9 +8,9 @@ export const formatCurrencyInput = (value: number): string =>
 
 export const formatServiceText = (years: number, months: number): string => {
   if (months === 0) {
-    return `${years} yrs`
+    return `${years} વર્ષ`
   }
-  return `${years} yrs ${months} mo`
+  return `${years} વર્ષ ${months} મહિના`
 }
 
 export const formatGratuityAmount = (value: number): string => {
