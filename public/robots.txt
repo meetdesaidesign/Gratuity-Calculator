@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gujarati-gratuity-calculator.info/sitemap.xml
