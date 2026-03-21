@@ -78,9 +78,6 @@ export function SalaryInput({ value, onChange }: SalaryInputProps) {
           }}
           aria-label={COPY.monthlySalaryLabel}
         />
-        <span style={{ fontSize: 12, color: 'var(--muted)', whiteSpace: 'nowrap' }}>
-          {COPY.monthlySuffix}
-        </span>
       </div>
 
       <div style={{ marginTop: 12 }}>

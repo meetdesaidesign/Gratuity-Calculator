@@ -19,7 +19,7 @@ export const formatGratuityAmount = (value: number): string => {
     return `₹${(safeValue / 10000000).toFixed(2)} Cr`
   }
   if (safeValue >= 100000) {
-    return `₹${(safeValue / 100000).toFixed(2)} L`
+    return `₹${(safeValue / 100000).toFixed(2)} લાખ`
   }
   return `₹${formatIndianNumber(safeValue)}`
 }

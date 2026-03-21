@@ -16,10 +16,12 @@ export function Slider({
   accent = 'var(--gold)',
 }: SliderProps) {
   const pct = ((value - min) / (max - min)) * 100
+  const sliderClass = `brand-slider-${min}-${max}-${step}`
 
   return (
     <div style={{ padding: '4px 0' }}>
       <input
+        className={sliderClass}
         type="range"
         min={min}
         max={max}
@@ -33,11 +35,12 @@ export function Slider({
           borderRadius: 99,
           outline: 'none',
           cursor: 'pointer',
+          accentColor: accent,
           background: `linear-gradient(to right, ${accent} ${pct}%, var(--track) ${pct}%)`,
         }}
       />
       <style>{`
-        input[type=range]::-webkit-slider-thumb {
+        .${sliderClass}::-webkit-slider-thumb {
           appearance: none;
           width: 20px;
           height: 20px;
@@ -48,14 +51,24 @@ export function Slider({
           cursor: pointer;
           transition: transform 0.12s;
         }
-        input[type=range]::-webkit-slider-thumb:hover { transform: scale(1.18); }
-        input[type=range]::-moz-range-thumb {
+        .${sliderClass}::-webkit-slider-thumb:hover { transform: scale(1.18); }
+        .${sliderClass}::-moz-range-thumb {
           width: 20px;
           height: 20px;
           border-radius: 50%;
           background: white;
           border: 3px solid ${accent};
           cursor: pointer;
+        }
+        .${sliderClass}::-moz-range-track {
+          height: 5px;
+          border-radius: 99px;
+          background: var(--track);
+        }
+        .${sliderClass}::-moz-range-progress {
+          height: 5px;
+          border-radius: 99px;
+          background: ${accent};
         }
       `}</style>
     </div>

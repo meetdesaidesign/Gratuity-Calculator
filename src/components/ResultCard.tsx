@@ -32,13 +32,13 @@ export function ResultCard({
   return (
     <section
       style={{
-        background: 'linear-gradient(135deg, #3a1fa8 0%, #6c47ff 100%)',
+        background: 'linear-gradient(135deg, rgba(148,24,16,1) 0%, rgba(255,79,77,1) 100%)',
         borderRadius: 24,
         padding: '28px 28px 24px',
         marginBottom: 16,
         position: 'relative',
         overflow: 'hidden',
-        boxShadow: '0 12px 40px rgba(108,71,255,0.3)',
+        boxShadow: '0 12px 40px rgba(255,79,77,0.3)',
       }}
     >
       <div
@@ -69,7 +69,7 @@ export function ResultCard({
           fontWeight: 600,
           letterSpacing: '0.14em',
           textTransform: 'uppercase',
-          color: 'rgba(255,255,255,0.5)',
+          color: 'rgba(255,255,255,0.8)',
           marginBottom: 6,
         }}
       >
@@ -95,29 +95,29 @@ export function ResultCard({
             display: 'inline-flex',
             alignItems: 'center',
             gap: 6,
-            background: showEligibleState ? 'rgba(52,211,153,0.2)' : 'rgba(255,255,255,0.1)',
+            background: showEligibleState ? 'rgba(255,255,255,0.2)' : 'rgba(255,255,255,0.1)',
             border: `1px solid ${
-              showEligibleState ? 'rgba(52,211,153,0.4)' : 'rgba(255,255,255,0.15)'
+              showEligibleState ? 'rgba(255,255,255,0.7)' : 'rgba(255,255,255,0.15)'
             }`,
             borderRadius: 99,
             padding: '5px 12px',
             fontSize: 12,
             fontWeight: 600,
-            color: showEligibleState ? '#6ee7b7' : 'rgba(255,255,255,0.45)',
+            color: showEligibleState ? 'rgba(255,255,255,1)' : 'rgba(255,255,255,0.7)',
           }}
         >
           <span>{showEligibleState ? '✓' : '✗'}</span>
           {pillPrefix} · {service}
         </div>
         {showEligibleState && (
-          <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.4)' }}>
+          <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.8)' }}>
             {effectiveYears} {COPY.yearsCountedSuffix}
           </div>
         )}
       </div>
 
       {!showEligibleState && nudge && (
-        <div style={{ marginTop: 12, fontSize: 12, color: 'rgba(255,255,255,0.45)', lineHeight: 1.5 }}>
+        <div style={{ marginTop: 12, fontSize: 12, color: 'rgba(255,255,255,0.7)', lineHeight: 1.5 }}>
           {nudge}
         </div>
       )}

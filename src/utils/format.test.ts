@@ -7,7 +7,7 @@ describe('formatters', () => {
   })
 
   it('formats lakh and crore values using shorthand', () => {
-    expect(formatGratuityAmount(125000)).toBe('₹1.25 L')
+    expect(formatGratuityAmount(125000)).toBe('₹1.25 લાખ')
     expect(formatGratuityAmount(15000000)).toBe('₹1.50 Cr')
   })
 
