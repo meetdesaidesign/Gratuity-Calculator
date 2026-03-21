@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "seo:prepare": "node scripts/update-sitemap-lastmod.mjs",
+    "prebuild": "npm run seo:prepare",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",

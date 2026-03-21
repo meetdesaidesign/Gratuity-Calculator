@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Gujarati Gratuity Calculator</title>
+  <desc id="desc">Gujarati gratuity calculator social sharing image</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff5f5" />
+      <stop offset="100%" stop-color="#ffdede" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#941810" />
+      <stop offset="100%" stop-color="#ff4f4d" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect x="80" y="90" rx="36" ry="36" width="1040" height="450" fill="url(#accent)" />
+  <text x="140" y="220" fill="#ffffff" font-size="66" font-family="'Noto Sans Gujarati', 'Nirmala UI', sans-serif" font-weight="700">
+    —Í°ÇšÍ¯Á‡ŸÀ •Ç²Í•Í¯Á²ÇŸ°
+  </text>
+  <text x="140" y="300" fill="#ffe9e9" font-size="40" font-family="'Noto Sans Gujarati', 'Nirmala UI', sans-serif" font-weight="500">
+    Gratuity Calculator (Gujarati)
+  </text>
+  <text x="140" y="385" fill="#fff7f7" font-size="32" font-family="'Noto Sans Gujarati', 'Nirmala UI', sans-serif">
+    Payment of Gratuity Act, 1972 †§¾°À¤ …‚¦¾œ
+  </text>
+  <text x="140" y="458" fill="#fff7f7" font-size="28" font-family="'Noto Sans Gujarati', 'Nirmala UI', sans-serif">
+    Basic + DA | µ°Í· + ®¹¿¨¾ | ¤°¤ ª°¿£¾®
+  </text>
+</svg>
