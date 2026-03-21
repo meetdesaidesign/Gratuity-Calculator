@@ -100,6 +100,12 @@ function App() {
         <footer style={{ textAlign: 'center', fontSize: 11, color: 'var(--muted)', lineHeight: 1.7 }}>
           <p>{COPY.footerLineOne}</p>
           <p>{COPY.footerLineTwo}</p>
+          <p>
+            For business related queries:{' '}
+            <a href="mailto:meetdesairayka@gmail.com" style={{ color: 'inherit' }}>
+              meetdesairayka@gmail.com
+            </a>
+          </p>
         </footer>
       </div>
     </main>

@@ -244,7 +244,8 @@ export default function GratuityCalculator() {
 
         <div style={{ textAlign: "center", fontSize: 11, color: "var(--muted)", lineHeight: 1.7 }}>
           Based on the Payment of Gratuity Act, 1972.<br />
-          Payout capped at ₹20L. This is an estimate.
+          Payout capped at ₹20L. This is an estimate.<br />
+          For business related queries: <a href="mailto:meetdesairayka@gmail.com" style={{ color: "inherit" }}>meetdesairayka@gmail.com</a>
         </div>
 
       </div>
